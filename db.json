@@ -1,0 +1,43 @@
+{
+  "pedidos": [
+    {
+      "id": 1,
+      "nome": "Maria",
+      "telefone": "12345678912",
+      "tamanho": "G"
+    },
+    {
+      "id": 5,
+      "nome": "Carla",
+      "telefone": "11122233344",
+      "tamanho": "M"
+    },
+    {
+      "nome": "Helena",
+      "telefone": "83123545678",
+      "tamanho": "M",
+      "id": 6
+    }
+  ],
+  "observacao": [],
+  "clientes": [
+    {
+      "id": 1,
+          "nome": "José",
+      "cpf": "11111",
+      "telefone": "1235",
+      "email": "jose@gmail.com",
+      "senha": "jose",
+      "endereco": "Rua tal"
+    },
+    {
+      "id": 2,
+      "nome": "Carla",
+      "cpf": "22222",
+      "telefone": "1236",
+      "email": "carla@gmail.com",
+      "senha": "carla",
+      "endereco": "Rua tal 2"
+    }
+  ]
+}

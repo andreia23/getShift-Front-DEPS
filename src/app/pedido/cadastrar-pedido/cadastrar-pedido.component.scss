@@ -1,0 +1,92 @@
+.component {
+  width: 100%;
+  height: 100%;
+  background-color: #DFE0E2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 5%;
+}
+.mat-card-inserirPedido{
+  width: 80%;
+}
+.example-container {
+  padding-left: 10px;
+}
+.mart-card-form{
+  margin-right: 5px;
+}
+.form-pedido{
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1rem;
+  margin-top: 10px;
+}
+.div-forms-pedido{
+  width: 50%;
+}
+.mat-card-image{
+  width: 50%;
+}
+.button-register-pedido{
+  text-align: center;
+}
+button{
+  margin: 1rem;
+}
+
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  margin: 0 10px;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+.btn-primary {
+  background-color: #51767C;
+  border: 1px solid #51767C;
+  transition: background-color .5s;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  border: 1px solid #51767C;
+  color: #51767C;
+}
+.btn-second {
+  background-color: #EE7C7C;
+  border: 1px solid #EE7C7C;
+  transition: background-color .5s;
+  text-align: center;
+}
+.btn-second:hover {
+  background-color: transparent;
+  border: 1px solid #EE7C7C;
+  color: #EE7C7C;
+}
+
+.btn-goback {
+  background-color: #EE7C7C;
+  border: 1px solid #EE7C7C;
+  transition: background-color .5s;
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  align-self: center;
+}
+.btn-goback:hover {
+  background-color: transparent;
+  color: #EE7C7C;
+  border: 1px solid #EE7C7C;
+}

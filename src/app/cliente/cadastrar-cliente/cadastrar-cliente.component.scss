@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ecf0f1;
+}
+.content {
+  background-color: #fff;
+  border-radius: 15px;
+  width: 960px;
+  height: 80%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.content::before {
+  content: "";
+  position: absolute;
+  background-color: #EE7C7C;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+
+  left: 0;
+}
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.title-primary {
+  color: #fff;
+}
+.title-second {
+  color: #EE7C7C;
+}
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+.btn-primary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  transition: background-color .5s;
+}
+.btn-primary:hover {
+  background-color: #fff;
+  color: #EE7C7C;
+}
+.btn-second {
+  background-color: #EE7C7C;
+  border: 1px solid #EE7C7C;
+  transition: background-color .5s;
+  text-align: center;
+}
+.btn-second:hover {
+  background-color: #fff;
+  border: 1px solid #EE7C7C;
+  color: #EE7C7C;
+}
+.first-content {
+  display: flex;
+}
+.first-content .second-column {
+  z-index: 11;
+}
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+}
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input:-webkit-autofill
+{
+  -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+.password {
+  color: #fff;
+  font-size: 14px;
+  margin: 15px 0;
+  text-align: center;
+}
+.password::first-letter {
+  text-transform: capitalize;
+}
+
