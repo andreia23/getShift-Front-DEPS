@@ -33,7 +33,6 @@ export class CadastrarEmpresaComponent implements OnInit {
   ngOnInit(): void {
   }
   inserirEmpresa(): void {
-    this.roteador.navigate(['/empresapainel']);
     if (this.empresa.idEmpresa) {
       this.empresaService.atualizar(this.empresa).subscribe(
         empresaAlterado => {
@@ -67,7 +66,6 @@ export class CadastrarEmpresaComponent implements OnInit {
     }
   }
   fazerloginEmpresa(): void{
-    this.roteador.navigate(['empresapainel']);
     if (!this.empresaLogin.email || !this.empresaLogin.senha) {
       const snackConfig = new MatSnackBarConfig();
       snackConfig.politeness = 'assertive';
