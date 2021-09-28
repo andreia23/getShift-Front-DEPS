@@ -42,9 +42,9 @@ export class CadastrarEmpresaComponent implements OnInit {
         }
       );
     } else {
-      console.log('aqui', this.empresa)
+      console.log('aqui', this.empresa);
       if (!this.empresa.nome) {
-        console.log('nao existe')
+        console.log('nao existe');
         const snackConfig = new MatSnackBarConfig();
         snackConfig.politeness = 'assertive';
         snackConfig.duration = 5000;
@@ -70,7 +70,7 @@ export class CadastrarEmpresaComponent implements OnInit {
       const snackConfig = new MatSnackBarConfig();
       snackConfig.politeness = 'assertive';
       snackConfig.duration = 5000;
-      this.snackBar.open( 'Preencha todos os campos.', 'x', snackConfig)
+      this.snackBar.open( 'Preencha todos os campos.Senha de no minimo 8 digitos', 'x', snackConfig);
     } else {
       this.empresaService.login(this.empresaLogin.email, this.empresaLogin.senha).subscribe(
         empresaLogada => {

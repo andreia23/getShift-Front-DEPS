@@ -8,7 +8,7 @@
       </mat-form-field>
       <mat-form-field appearance="fill" class="mat-form-simples">
         <mat-label>Senha</mat-label>
-        <input type="password" matInput [(ngModel)]="clienteLogin.senha" placeholder="Senha" required>
+        <input type="password" matInput [(ngModel)]="clienteLogin.senha" required >
       </mat-form-field>
       <p><a class="password" href="#">Esqueceu a senha?</a></p>
       <button id="signin" class="btn btn-primary" (click)="fazerlogin()">Entrar</button>
@@ -35,7 +35,7 @@
       </mat-form-field>
       <mat-form-field appearance="fill" class="mat-form-simples">
         <mat-label>Senha</mat-label>
-        <input type="password" matInput [(ngModel)]="cliente.senha" placeholder="Senha" minlength="8" required>
+        <input type="password" matInput [(ngModel)]="cliente.senha"  placeholder="Senha de no minimo 8 digitos" minlength="8" required>
       </mat-form-field>
       <button class="btn btn-second" (click)="inserirCliente()" *ngIf="operacaoCadastro">Cadastrar</button>
 
