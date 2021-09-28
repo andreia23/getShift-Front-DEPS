@@ -4,6 +4,9 @@ import {ActivatedRoute, Router} from '@angular/router';
 import {Empresa} from '../../shared/model/Empresa';
 import {EmpresaService} from '../../shared/services/empresa.service';
 import {MatSnackBar, MatSnackBarConfig} from '@angular/material/snack-bar';
+import {Observable, of} from 'rxjs';
+import {catchError} from 'rxjs/operators';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'app-cadastrar-empresa',
@@ -15,6 +18,7 @@ export class CadastrarEmpresaComponent implements OnInit {
   empresaLogin: Empresa;
   empresas: Array<Empresa>;
   operacaoCadastro = true;
+  public dialog: MatDialog;
 
   // tslint:disable-next-line:max-line-length
   constructor(private empresaService: EmpresaService, private rotalAtual: ActivatedRoute,
@@ -60,6 +64,13 @@ export class CadastrarEmpresaComponent implements OnInit {
             snackConfig.panelClass = ['Success'];
             this.snackBar.open( 'Empresa cadastrada com sucesso.', 'x', snackConfig);
             this.roteador.navigate(['/empresapainel']);
+          }, error => {
+            console.log('Erro aqui' + error);
+            const snackConfig = new MatSnackBarConfig();
+            snackConfig.politeness = 'assertive';
+            snackConfig.duration = 5000;
+            snackConfig.panelClass = ['Success'];
+            this.snackBar.open( 'CNPJ ou Email inválido.', 'x', snackConfig);
           }
         );
       }

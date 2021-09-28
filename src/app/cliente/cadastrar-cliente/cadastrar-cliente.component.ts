@@ -67,6 +67,12 @@ export class CadastrarClienteComponent implements OnInit {
             snackConfig.duration = 5000;
             this.snackBar.open( 'Cliente cadastrado com sucesso.', 'x', snackConfig);
             this.roteador.navigate(['clientepainel']);
+          }, error => {
+            const snackConfig = new MatSnackBarConfig();
+            snackConfig.politeness = 'assertive';
+            snackConfig.duration = 5000;
+            snackConfig.panelClass = ['Success'];
+            this.snackBar.open( 'CPF ou Email inválido.', 'x', snackConfig);
           }
         );
       }
